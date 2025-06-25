@@ -47,48 +47,29 @@ body {
 }
 
 /* Scrollbar */
-/* style.css */
-
-/* ... (Kode CSS Anda sebelumnya) ... */
-
-/* --- Scrollbar Customization --- */
-
-/* Mengatur lebar scrollbar vertikal */
 ::-webkit-scrollbar {
-    width: 12px; /* Lebar scrollbar vertikal */
-    height: 12px; /* Tinggi scrollbar horizontal (jika ada) */
+    width: 12px;
+    height: 12px;
 }
 
-/* Track (area di mana scrollbar bergerak) */
 ::-webkit-scrollbar-track {
-    background: linear-gradient(to bottom, #110721, #1f014f);  /* Warna latar belakang track */
+    background: linear-gradient(to bottom, #110721, #1f014f); 
 
 }
 
-/* Thumb (bagian yang bisa digeser) */
 ::-webkit-scrollbar-thumb {
-    background: white; /* Warna biru untuk thumb */
-    border-radius: 10px; /* Sudut melengkung untuk thumb */
-    border: 2px solid #2b2b2b; /* Border untuk thumb (memberikan efek terpisah dari track) */
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #2b2b2b;
 }
 
-/* Thumb saat di-hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #0056b3; /* Warna thumb saat di-hover (sedikit lebih gelap) */
+    background: grey;
 }
 
-/* Corner (area di pojok kanan bawah jika ada scrollbar vertikal dan horizontal) */
 ::-webkit-scrollbar-corner {
-    background: #1a1a1a; /* Warna corner */
+    background: #110721;
 }
-
-/* --- Optional: Scrollbar Styling (Standard CSS - limited browser support) --- */
-/*
-body {
-    scrollbar-width: thin; // 'auto' | 'thin' | 'none'
-    scrollbar-color: #007bff #2b2b2b; // thumb-color track-color
-}
-*/
 
 /* profile */
 .profile-content {
@@ -156,15 +137,16 @@ body {
     font-size: 25px;
     margin-top: 0;
     text-align: left;
-    color: #007bff;
+    color: white;
 }
 
 .biodata p { 
     text-align: left;
     margin-bottom: 10px;
     line-height: 1.6;
-    color: #ccc;
+    color: #fff;
 }
+
 .biodata p strong {
     color: #fff;
 }
