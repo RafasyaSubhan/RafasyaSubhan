@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .profile-content {
+          width: 80%;
+          max-width: 900px;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center; 
+        }
+
+        .profile-header {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-bottom: 40px; 
+            padding-top: 20px; 
+        }
+
+        .profile-header img {
+            width: 400px;
+            border-radius: 10px;
+            height: auto;
+            display: block;
+            margin: 0 auto;  
+        }
+
+        .profile-header p { 
+            font-size: 25px; 
+            font-weight: bold; 
+            color: #fff; 
+            margin-top: 0; 
+            margin-bottom: 0; 
+            text-align: center;
+            line-height: 0.3; 
+            font-family: 'PT Serif', serif;
+            
+        }
+
+        .biodata {
+            width: 100%; 
+            background-color: #130150; 
+            border-radius: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+            border: 1px solid rgb(18,10,4);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .biodata-content-wrapper { 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .biodata-content-wrapper .profile-text {
+            flex: 1;
+            margin-right: 30px;
+            min-width: 300px;
+        }
+        .biodata-content-wrapper img { 
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            flex-shrink: 0;
+            order: 2; 
+            margin-right: 15px;
+        }
+
+        .profile {
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 0;
+            text-align: left;
+            color: #007bff;
+        }
+
+        .biodata p { 
+            text-align: left;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .biodata p strong {
+            color: #fff;
+        }
+
+        .socialmedia {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .socialmedia a {
+            display: inline-block;
+            margin: 0 15px;
+            transition: transform 0.2s;
+        }
+        .socialmedia a:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .socialmedia img {
+            width: 35px;
+            vertical-align: middle;
+            border-radius: 0;
+            filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+        }
+
+        .education-map {
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            margin-top: 20%;
+        }
+
+        .education-map img {
+            width: 70px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 0px;
+            display: flex;
+        }
+
+        .education-map p {
+            margin: 0 0 3px 0;
+            font-size: 0.9cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar"> 
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="profile.html" class="active"><i class="fas fa-user"></i> About</a>
+        <a href="achievement.html"><i class="fas fa-medal"></i> Achievement</a>
+    </div>
+
+    <div class="profile-content">
+        <div class="profile-header">
+            <img src="images/Jakun-Background.png" alt="Foto Profil Rafasya">
+            <p>RAFASYA MUHAMMAD SUBHAN</p> 
+        </div>
+
+        <div class="biodata">
+            <div class="biodata-content-wrapper">
+            <img src="images/GWK.jpg" alt="Foto Profil di GWK">
+            </div>
+
+            <div class="profile-text"> <p class="profile">Profile</p>
+                <p><strong>Name:</strong> Rafasya Muhammad Subhan</p>
+                <p><strong>Place and Date of Birth:</strong> Jakarta, 15 October 2005</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Nationality:</strong> Indonesia</p>
+                <p><strong>Religion:</strong> Islam</p>
+                <p><strong>Address:</strong> Jl. D4 No. 10 Rt.12 Rw.04, Kebon Baru, Tebet, Jakarta Selatan</p>
+            </div>
+
+            <div class="socialmedia">
+                <a href="https://instagram.com/rafasya.ms" target="_blank">
+                    <img src="images/Instagram Logo.png" alt="Instagram Logo">
+                </a>
+                <a href="https://x.com/RafasyaSubhann" target="_blank">
+                    <img src="images/X logo.png" alt="X logo">
+                </a>
+                <a href="https://linkedin.com/in/rafasyasubhanli/" target="_blank">
+                    <img src="images/Linkedin logo.png" alt="Linkedin logo">
+                </a>
+            </div>
+        </div>
+
+        <h1>Education</h1>
+        <div class="education-map">
+            <img src="images/UI logo.png" alt="Logo Universitas Indonesia">
+            <div>
+                <p>Universitas</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

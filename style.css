@@ -1,0 +1,51 @@
+/* style.css */
+
+body {
+  background: #1f014f;
+  background: linear-gradient(45deg, #110721, #1f014f);
+  font-family: Arial, sans-serif;
+  color: white; /* Added for profile.html content */
+  padding: 0; /* Reset default body padding */
+  margin: 0; /* Reset default body margin */
+  display: flex; /* Added for overall centering */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers items horizontally */
+  min-height: 100vh; /* Ensures body takes full viewport height */
+}
+
+.navbar {
+  background-color: #130150;
+  border: 1px solid rgb(18, 10, 64);
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center; /* Centers the links within the navbar */
+  margin-top: 50px; /* Adjust as needed for spacing from top */
+  margin-bottom: 30px; /* Space below navbar */
+}
+
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: white;
+}
+
+.navbar i {
+  font-size: 16px;
+}
+
+
+
