@@ -91,7 +91,7 @@ body {
 }
 
 .profile-header img {
-    width: 400px;
+    width: 500px;
     border-radius: 10px;
     height: auto;
     display: block;
@@ -104,7 +104,6 @@ body {
     border-radius: 10px;
     padding: 25px;
     box-sizing: border-box;
-    border: 1px solid rgb(18,10,4);
     margin-bottom: 20px;
     display: flex;
     align-items: flex-start;
@@ -176,21 +175,82 @@ body {
 .education-map {
     width: 100%;
     padding: 20px;
-    position: relative;
-    margin-top: 20%;
+    margin-top: 20px;
 }
 
-.education-map img {
+.education-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.school-logo {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.school-logo img {
     width: 70px;
     height: auto;
-    margin-right: 10px;
-    border-radius: 0px;
-    display: flex;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
 }
 
-.education-map p {
+.education-item h3 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.education-item p.prodi {
     margin: 0 0 3px 0;
-    font-size: 0.9cm;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.education-item p.year {
+    margin: 0;
+    font-size: 0.85em;
+    color: #aaa;
 }
 
 /* index */
+.welcome {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome img {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+
+    /* --- Fade-in Animation --- */
+    opacity: 0; /* Dimulai tidak terlihat */
+    animation: fadeIn 2s ease-in-out forwards; /* Menerapkan animasi */
+}
+
+/* --- Keyframes for the Fade-in Animation --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
