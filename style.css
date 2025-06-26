@@ -222,6 +222,10 @@ body {
     color: #f8f8f8;
 }
 
+.garis img{
+    width: 70px;
+}
+
 /* index */
 .welcome {
     width: 100%;
@@ -254,20 +258,12 @@ body {
     }
 }
 
-/* viewport */
-/* Pastikan ini ada di bagian HEAD HTML Anda */
-/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
-
-
-/* CSS Anda yang sudah ada di sini... */
-
-/* --- Bagian Responsif: Tambahkan Media Queries di Akhir CSS Anda --- */
 
 @media screen and (max-width: 768px) { /* Untuk tablet dan ponsel besar */
     /* Navbar */
     .navbar {
         flex-direction: column; /* Ubah tata letak jadi vertikal di mobile */
-        width: 90%; /* Ambil lebar yang lebih besar */
+        width: 80%; /* Ambil lebar yang lebih besar */
         margin-top: 20px; /* Kurangi margin atas */
         padding: 10px 15px; /* Kurangi padding */
         gap: 15px; /* Kurangi jarak antar item */
@@ -290,7 +286,7 @@ body {
     }
 
     .profile-header img {
-        width: 80%; /* Gambar header lebih kecil di mobile */
+        width: 90%; /* Gambar header lebih kecil di mobile */
         max-width: 400px; /* Batasi agar tidak terlalu besar di tablet */
     }
 
@@ -311,7 +307,12 @@ body {
         margin-bottom: 20px; /* Tambahkan margin bawah */
         min-width: unset; /* Hapus min-width agar fleksibel */
         width: 100%; /* Ambil lebar penuh */
-        text-align: center; /* Pusatkan teks */
+    }
+
+    .justified-text {
+        max-width: 50ch;
+        margin: 0 auto;
+        text-align: justify;
     }
 
     .biodata-content-wrapper img { /* Gambar di dalam biodata */
@@ -324,10 +325,6 @@ body {
     .profile { /* Judul "Profile" */
         font-size: 20px; /* Ukuran font lebih kecil */
         text-align: center; /* Pusatkan di mobile */
-    }
-
-    .biodata p {
-        text-align: center; /* Pusatkan teks paragraf */
     }
 
     /* Social Media */
@@ -371,6 +368,10 @@ body {
     .education-item p.prodi,
     .education-item p.year {
         font-size: 0.9em; /* Ukuran font lebih kecil */
+        text-align: center;
+    }
+
+    .garis {
         text-align: center;
     }
 
