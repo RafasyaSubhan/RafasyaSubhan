@@ -139,14 +139,15 @@ body {
 }
 
 .biodata p { 
-    text-align: left;
     margin-bottom: 10px;
     line-height: 1.6;
     color: #f8f8f8;
 }
 
-.biodata p strong {
-    color: #f8f8f8;
+.justified-text {
+    max-width: 50ch; /* Teks akan ganti baris setelah sekitar 70 karakter lebar (unit 'ch') */
+    margin: 0 auto;
+    text-align: justify;
 }
 
 .socialmedia {
